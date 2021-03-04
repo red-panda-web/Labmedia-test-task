@@ -1,0 +1,5 @@
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .main__title {
+    padding: 100px 0 40px 0;
+  }
+}

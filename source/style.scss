@@ -1,5 +1,4 @@
 @import "_nullstyle.scss";
-@import "_adaptive.scss";
 
 @font-face {
     font-family: 'PT Root UI';
@@ -168,6 +167,10 @@ body{
    display: flex;
    justify-content: center;
    border-bottom: 1px solid #515151;
+   img{
+      width: 162px;
+      height: 112px;
+   }
 }
 
 .design__part1-desc {
@@ -177,7 +180,7 @@ body{
    color: #ffffff;
 }
 
-.design__part2 {
+.design__part2, .design__part3 {
    max-width: 223px;
 }
 
@@ -188,23 +191,12 @@ body{
    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-.design__part2-desc {
-   padding: 18px 0 0 0;
-   font-weight: 500;
-   font-size: 16px;
-   line-height: 150%;
-}
-
-.design__part3 {
-   max-width: 223px;
-}
-
 .design__part3-img, .design__part4-img  {
    display: flex;
    justify-content: center;
 }
 
-.design__part3-desc, .design__part4-desc {
+.design__part2-desc, .design__part3-desc, .design__part4-desc {
    padding: 18px 0 0 0;
    font-size: 16px;
    line-height: 150%;
@@ -217,7 +209,7 @@ body{
 
 /* ------------------------------------ */
 
-/* ---------- Scanner section ---------- */
+/* ---------- Scanner (video) section ---------- */
 
 .scanner {
    padding: 38px 0 62px 0;
@@ -232,6 +224,9 @@ body{
 .scanner__img {
    flex: 0 0 465px;
    align-self: flex-start;
+   img{
+      max-width: 100%;
+   }
 }
 
 .scanner__features {
@@ -257,7 +252,7 @@ body{
    }
 }
 
-/* ------------------------------------- */
+/* --------------------------------------------- */
 
 /* ---------- Accessories section ---------- */
 
@@ -281,6 +276,10 @@ body{
    justify-content: center;
    padding: 0 0 25px 0;
    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+   img{
+      width: 222px;
+      height: 115px;
+   }
 }
 
 .accessories__card_type1-desc, .accessories__card_type2 {
@@ -347,3 +346,4 @@ body{
 }
 
 /* ---------------------------------- */
+@import "_adaptive.scss";

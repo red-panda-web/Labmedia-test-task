@@ -1,0 +1,409 @@
+@media screen and (max-width: 1000px){
+   .container{
+      max-width: 720px;
+   }
+
+   /* ---------- Design section ---------- */
+   .design{
+      padding: 40px 0 60px 0;
+   }
+
+   .design__body{
+      flex-wrap: wrap;
+      margin-top: 40px;
+   }
+
+   .design__part1, .design__part2, .design__part3, .design__part4{
+      max-width: 325px;
+   }
+
+   .design__part1-img{
+      img{
+         width: 265px;
+         height: 183px;
+      }
+   }
+
+   .design__part2-desc, .design__part3-desc, .design__part4-desc {
+      font-size: 14px;
+   }
+
+   .design__part3, .design__part4{
+      margin-top: 50px;
+   }
+
+   .design__part3-desc{
+      br{
+         display: none;
+      }
+   }
+
+   .design__part3-desc, .design__part4-desc{
+      padding: 20px 0 0 0;
+   }
+
+   /* ------------------------------------ */
+
+   /* ---------- Scanner (video) section ---------- */
+
+   .scanner .section__title{
+      line-height: 42px;
+   }
+
+   .scanner__img, .scanner__features {
+      flex-basis: 325px;
+   }
+
+   .feature{
+      font-size: 14px;
+      &:nth-child(n){
+         background-position: 14% 50%;
+      }
+   }
+   
+   /* --------------------------------------------- */
+
+   /* ---------- Accessories section ---------- */
+
+   .accessories__body{
+      flex-wrap: wrap;
+      margin-top: 40px;
+   }
+
+   .accessories__card_type1, .accessories__card_type2{
+      width: 325px;
+   }
+
+   .accessories__card_type2{
+      margin-top: 51px;
+      &::before{
+         width: 15%;
+      }
+   }
+
+   .accessories__card_type1-img{
+      img{
+         width: 325px;
+         height: 168px;
+      }
+   }
+
+   .accessories__card_type1-desc, .accessories__card_type2{
+      font-size: 14px;
+   }
+   /* ----------------------------------------- */
+
+   /* ---------- Apps section ---------- */
+   .apps__body{
+      margin-top: 52px;
+   }
+   
+   .apps__item{
+      width: 210px;
+      margin-bottom: 40px;
+   }
+
+   .apps__desc{
+      font-size: 14px;
+   }
+   /* ---------------------------------- */
+}
+
+@media screen and (max-width: 720px){
+   .container{
+      max-width: none;
+   }
+
+   /* ---------- Design section ---------- */
+
+   .design__part1{
+      max-width: 100%;
+   }
+
+   .design__part1-img{
+      img{
+         max-width: 80%;
+      }
+   }
+   
+   .design__part2{
+      max-width: 100%;
+      order: 4;
+   }
+
+   .design__part3, .design__part4{
+      width: 50%;
+      margin: 70px 0;
+   }
+
+   /* ------------------------------------ */
+
+   /* ---------- Scanner (video) section ---------- */
+
+   .scanner__body{
+      flex-wrap: wrap;
+   }
+
+   .scanner__img{
+      flex-basis: 100%;
+      display: flex;
+      justify-content: center;
+   }
+   
+   .scanner__features{
+      margin-top: 40px;
+   }
+
+   .feature{
+      margin-top: 20px;
+      br{
+         display: none;
+      }
+      &:nth-child(n){
+         background-position: 50% 5%;
+         padding: 70px 0 0 0;
+      }
+   }
+
+   /* --------------------------------------------- */
+
+   
+   /* ---------- Accessories section ---------- */
+
+   .accessories__card_type1{
+      width: 100%;
+      margin-bottom: 40px;
+   }
+
+   .accessories__card_type1-img{
+      img{
+         max-width: 100%;
+      }
+   }
+
+   .accessories__card_type2{
+      width: 45%;
+   }
+
+   
+   /* ----------------------------------------- */
+
+   /* ---------- Apps section ---------- */
+
+   .apps__body{
+      justify-content: center;
+   }
+
+   .apps__item{
+      margin: 20px;
+   }
+}
+
+@media screen and (max-width: 550px){
+
+   .container{
+      padding: 0 15px;
+   }
+
+   /* ---------- Header ---------- */
+
+   .header{
+      position: relative;
+      &::after{
+         content: "Samsung Galaxy S10";
+         position: absolute;
+         width: 100%;
+         height: 24px;
+         background: #EFEFEF;
+         padding: 5px 15px;
+         font-size: 10px;
+         line-height: 140%;
+         opacity: 0.7;
+         letter-spacing: -0.01em;
+      }
+      & .container{
+         &::after{
+            display: none;
+         }
+      }
+   }
+
+   .headerBody{
+      height: 49px;  
+   }
+
+   .headerBody__logo{
+      align-items: center;
+   }
+
+   .headerBody__logo-one {
+      width: 25px;
+      height: 25px;
+      img{
+         max-width: 100%;
+      }
+   } 
+
+   .headerBody__logo-two{
+      width: 30px;
+      height: 30px;
+      margin: 0 0 0 15px;
+      img{
+         max-width: 100%;
+      }
+   }
+
+   .headerBody__title{
+      display: none;
+   }
+
+   /* ---------------------------- */
+
+
+   /* ---------- Body ---------- */
+
+   .main{
+      padding: 15px 0 0 0;
+   }
+   .main__title{
+      padding: 40px 0 31px 0;
+      font-size: 30px;
+      line-height: 133%;
+      white-space: normal;
+   } 
+
+   /* -------------------------- */
+
+   /* ---------- Design section ---------- */
+
+   .design{
+      padding: 19px 0 53px 0;
+   }
+   
+   .section__title{
+      font-size: 22px;
+      line-height: 141%;
+      white-space: normal;
+   }
+
+   .design__body{
+      margin-top: 30px;
+   }
+
+   .design__part1-img{
+      img{
+         max-width: none;
+         width: 230px;
+         height: 158px;
+      }  
+   }
+
+   .design__part1-desc{
+      padding: 19px 0 0 0;
+   }
+
+   .design__part2-img{
+      padding: 0 0 27px 0;
+   } 
+
+   .design__part3, .design__part4{
+      width: 49%;
+      margin: 40px 0;
+   }
+
+   .design__part3-desc, .design__part4-desc{
+      font-size: 12px;
+      line-height: 142%;
+   }
+
+   /* ------------------------------------ */
+
+   /* ---------- Scanner (video) section ---------- */
+
+   .scanner{
+       padding: 13px 0 32px 0;
+   }
+
+   .scanner__body{
+      margin-top: 25px;
+      img{
+
+      }
+   }
+
+   .scanner__features{
+      flex-basis: 100%;
+      margin-top: 15px;
+   }
+
+   .feature{
+      margin-top: 25px;
+      &:nth-child(n){
+         padding: 85px 0 0 0;
+      }
+   }
+
+   /* --------------------------------------------- */
+
+   /* ---------- Accessories section ---------- */
+
+   .accessories{
+       padding: 38px 0 52px 0;
+   }
+   .accessories__body{
+      margin-top: 30px;
+   }
+
+   .accessories__card_type1-img{
+      padding: 0 0 8px 0;
+   }
+
+   .accessories__card_type2{
+      width: 48%;
+      margin-top: 1px;
+      font-size: 12px;
+      line-height: 142%;
+   }
+
+   /* ----------------------------------------- */
+
+   /* ---------- Apps section ---------- */
+
+   .apps {
+      padding: 19px 0;
+   }
+
+   .apps__body{
+      margin-top: 0;
+   }
+
+   .apps__item{
+      width: 100%;
+      margin: 10px 0;
+      display: flex;
+      padding: 20px 0 30px 0;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+      & .apps__img{
+         margin-right: 18px;
+         padding: 4px 0 0 9px;
+      }
+
+      &:nth-child(2), &:nth-child(5){
+         margin: 10px 0;
+      }
+      &:nth-child(2n){
+         flex-direction: row-reverse;
+      }
+   }
+
+   .apps__img{
+      
+   }
+
+   .apps__desc{
+      font-size: 12px;
+      line-height: 142%;
+      padding: 0;
+   }
+}
+
