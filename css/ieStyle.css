@@ -1,5 +1,13 @@
-@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) and (min-width: 550px) {
   .main__title {
     padding: 100px 0 40px 0;
+  }
+}
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) and (max-width: 550px) {
+  .apps__item:nth-child(odd) .apps__img {
+    margin-right: 10px;
+  }
+  .apps__item:nth-child(odd) .apps__img img {
+    padding-left: 0;
   }
 }

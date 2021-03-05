@@ -499,7 +499,7 @@ body {
 
   /* ---------------------------------- */
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 719px) {
   .container {
     max-width: none;
   }
@@ -571,7 +571,7 @@ body {
     justify-content: center;
   }
 
-  .apps__item {
+  .apps__item:nth-child(n) {
     margin: 20px;
   }
 }
@@ -645,7 +645,7 @@ body {
   /* -------------------------- */
   /* ---------- Design section ---------- */
   .design {
-    padding: 19px 0 53px 0;
+    padding: 19px 0 51px 0;
   }
 
   .section__title {
@@ -673,7 +673,7 @@ body {
   }
 
   .design__part3, .design__part4 {
-    width: 49%;
+    width: 48.5%;
     margin: 40px 0;
   }
 
@@ -691,6 +691,7 @@ body {
   .scanner__body {
     margin-top: 25px;
   }
+
   .scanner__features {
     flex-basis: 100%;
     margin-top: 15px;
@@ -718,10 +719,13 @@ body {
   }
 
   .accessories__card_type2 {
-    width: 48%;
+    width: 48.5%;
     margin-top: 1px;
     font-size: 12px;
     line-height: 142%;
+  }
+  .accessories__card_type2::before {
+    width: 30%;
   }
 
   /* ----------------------------------------- */
@@ -731,28 +735,61 @@ body {
   }
 
   .apps__body {
-    margin-top: 0;
+    margin-top: 10px;
   }
 
   .apps__item {
-    width: 100%;
-    margin: 10px 0;
     display: flex;
-    padding: 20px 0 30px 0;
+    justify-content: space-between;
+    width: 100%;
+    padding: 30px 0 30px 0;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   }
-  .apps__item .apps__img {
-    margin-right: 18px;
-    padding: 4px 0 0 9px;
+  .apps__item:nth-child(1) {
+    padding: 20px 0 30px 0;
   }
-  .apps__item:nth-child(2), .apps__item:nth-child(5) {
-    margin: 10px 0;
+  .apps__item:nth-child(1) img {
+    padding: 3px 0 0 7px;
   }
-  .apps__item:nth-child(2n) {
+  .apps__item:nth-child(2) {
     flex-direction: row-reverse;
+  }
+  .apps__item:nth-child(2) img {
+    padding: 3px 8px 0 0px;
+  }
+  .apps__item:nth-child(3) img {
+    padding: 3px 0 0 7px;
+  }
+  .apps__item:nth-child(4) {
+    flex-direction: row-reverse;
+    padding: 30px 0 30px 0;
+  }
+  .apps__item:nth-child(4) .apps__desc {
+    padding: 5px 0 0 0;
+  }
+  .apps__item:nth-child(4) img {
+    padding: 0 7px 0 0;
+  }
+  .apps__item:nth-child(5) {
+    padding: 30px 0 25px 0;
+    border-bottom-style: none;
+  }
+  .apps__item:nth-child(5) .apps__desc {
+    padding: 5px 0 0 0;
+  }
+  .apps__item:nth-child(5) img {
+    padding: 0 0 0 7px;
+  }
+  .apps__item:nth-child(n) {
+    margin: 0;
+  }
+
+  .apps__img {
+    align-self: center;
   }
 
   .apps__desc {
+    max-width: 205px;
     font-size: 12px;
     line-height: 142%;
     padding: 0;
