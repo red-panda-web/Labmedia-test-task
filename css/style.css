@@ -253,10 +253,16 @@ body {
   padding: 0 0 25px 0;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
+.design__part2-img img {
+  max-width: 100%;
+}
 
 .design__part3-img, .design__part4-img {
   display: flex;
   justify-content: center;
+}
+.design__part3-img img, .design__part4-img img {
+  max-width: 100%;
 }
 
 .design__part2-desc, .design__part3-desc, .design__part4-desc {
@@ -393,6 +399,9 @@ body {
 .apps__img {
   display: flex;
   justify-content: center;
+}
+.apps__img img {
+  max-width: 100%;
 }
 
 .apps__desc {
