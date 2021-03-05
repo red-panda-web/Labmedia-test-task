@@ -189,6 +189,11 @@ body {
   text-overflow: ellipsis;
 }
 
+@-moz-document url-prefix() {
+  .main__title, .section__title {
+    letter-spacing: -0.02em;
+  }
+}
 /* -------------------------- */
 /* ---------- Design section ---------- */
 .design {
@@ -642,6 +647,11 @@ body {
     white-space: normal;
   }
 
+  @-moz-document url-prefix() {
+    .main__title {
+      padding: 40px 0 30px 0;
+    }
+  }
   /* -------------------------- */
   /* ---------- Design section ---------- */
   .design {

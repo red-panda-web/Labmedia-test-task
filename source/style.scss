@@ -129,6 +129,11 @@ body{
    text-overflow: ellipsis;
 }
 
+@-moz-document url-prefix() {
+   .main__title, .section__title{
+      letter-spacing: -0.02em
+   }
+}
 /* -------------------------- */
 
 /* ---------- Design section ---------- */

@@ -273,6 +273,11 @@
       line-height: 133%;
       white-space: normal;
    } 
+   @-moz-document url-prefix() {
+      .main__title{
+         padding: 40px 0 30px 0;
+      }
+   }
 
    /* -------------------------- */
 

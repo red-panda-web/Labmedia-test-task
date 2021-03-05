@@ -5,6 +5,10 @@
 }
 
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) and (max-width: 550px) {  
+   .scanner__img {
+      display: block;
+   }
+
    .apps__item{
       &:nth-child(odd) .apps__img{
          margin-right: 10px;
